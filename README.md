@@ -1,2 +1,2 @@
-# dashboard-theme
-dashboard theme bootstrap 3 stylus
+# Dashboard Theme stylus
+Dashboard Theme based on Twitter Bootstrap 3
