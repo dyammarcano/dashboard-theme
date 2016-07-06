@@ -3,17 +3,17 @@ $color002 = #cbcbd2
 
 $sidebar-size = 222px
 
-/*!
+/*
  * 3rd Normalize.css v4.1.1 (https://necolas.github.io/normalize.css)
  */
 @import "imports/normalize"
 
-/*!
+/*
  * 3rd Animate.css v3.5.1 (https://daneden.github.io/animate.css)
  */
 @import "imports/animate"
 
-/*!
+/*
  * 3rd Bootstrap v3.3.6 (http://getbootstrap.com)
  */
 
@@ -66,38 +66,7 @@ $sidebar-size = 222px
 @import "bootstrap/utilities"
 @import "bootstrap/responsive-utilities"
 
-/*!
+/*
  * Custom Style Dashboard
  */
-.wrapper
-  position relative
-  top 0
-  height 100vh
-
-.sidebar
-  position absolute
-  top 0
-  bottom 0
-  left 0
-  width $sidebar-size
-  display block
-  z-index 1
-  color white
-  font-weight 200
-  background-size cover
-  background-position center center
-
-.main-panel
-  background rgba($color002, 0.15)
-  position relative
-  z-index 2
-  float right
-  width 'calc(100% - %s)' % ($sidebar-size)
-  min-height 100%
-  & > .content
-    padding 30px 15px
-    min-height 'calc(100% - %s)' % ($sidebar-size - ($sidebar-size / 18 * 8))
-  & > .footer
-    border-top 1px solid $color001
-  .navbar
-    margin-bottom 0
+//@import "current"
