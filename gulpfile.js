@@ -2,9 +2,12 @@ var gulp        = require('gulp');
 var rename      = require('gulp-rename');
 var stylus      = require('gulp-stylus');
 var sourcemaps  = require('gulp-sourcemaps');
-
+var clean       = require('gulp-clean');
 
 gulp.task('styles', function() {
+  gulp.src('build', { read: false })
+    .pipe(clean());
+    
   gulp.src('dashboard.styl')
     .pipe(sourcemaps.init())
     .pipe(stylus({ compress: true, linenos: false }))
@@ -13,21 +16,19 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('dist'));
 });
 
-
-gulp.task('bootstrap', function() {
+gulp.task('styles-dev', function() {
   gulp.src('dashboard.styl')
-    .pipe(sourcemaps.init())
-    .pipe(stylus({ compress: true, linenos: false }))
-    .pipe(rename('dashboard.min.css'))
-    .pipe(sourcemaps.write('maps'))
+    .pipe(stylus({ compress: false, linenos: true }))
+    .pipe(rename('dashboard.css'))
     .pipe(gulp.dest('dist'));
 });
 
 
 gulp.task('watch', function() {
-  gulp.watch('dashboard.styl', ['styles']);
-  gulp.watch('bootstrap/**/*', ['styles']);
+  gulp.watch('./**/*.styl', ['styles-dev']);
 });
 
 
-gulp.task('default', ['styles', 'watch']);
+gulp.task('default', ['styles-dev', 'watch']);
+
+gulp.task('dist', ['styles']);
