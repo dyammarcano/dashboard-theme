@@ -1,11 +1,9 @@
-lesscss-percentage(n)
-  (n * 100)%
 .breadcrumb
-  padding breadcrumb-padding-vertical breadcrumb-padding-horizontal
-  margin-bottom line-height-computed
+  padding $breadcrumb-padding-vertical $breadcrumb-padding-horizontal
+  margin-bottom $line-height-computed
   list-style none
-  background-color breadcrumb-bg
-  border-radius border-radius-base
+  background-color $breadcrumb-bg
+  border-radius $border-radius-base
   > li
     display inline-block
     + li:before
@@ -14,3 +12,4 @@ lesscss-percentage(n)
       color breadcrumb-color
   > .active
     color breadcrumb-active-color
+
