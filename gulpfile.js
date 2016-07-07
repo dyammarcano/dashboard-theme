@@ -14,8 +14,19 @@ gulp.task('styles', function() {
 });
 
 
+gulp.task('bootstrap', function() {
+  gulp.src('dashboard.styl')
+    .pipe(sourcemaps.init())
+    .pipe(stylus({ compress: true, linenos: false }))
+    .pipe(rename('dashboard.min.css'))
+    .pipe(sourcemaps.write('maps'))
+    .pipe(gulp.dest('dist'));
+});
+
+
 gulp.task('watch', function() {
   gulp.watch('dashboard.styl', ['styles']);
+  gulp.watch('bootstrap/**/*', ['styles']);
 });
 
 
