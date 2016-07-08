@@ -12,7 +12,7 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.init())
     .pipe(stylus({ compress: true, linenos: false }))
     .pipe(rename('dashboard.min.css'))
-    .pipe(sourcemaps.write('maps'))
+    .pipe(sourcemaps.write('map'))
     .pipe(gulp.dest('dist'));
 });
 
@@ -29,6 +29,6 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['styles-dev', 'watch']);
+gulp.task('default', ['styles-dev']);
 
 gulp.task('dist', ['styles']);

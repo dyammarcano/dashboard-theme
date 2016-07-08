@@ -205,12 +205,42 @@ body,
       font-weight 600
       text-transform uppercase
     i
-      font-size 28px
+      font-size 19px
       float left
-      margin-right 15px
-      line-height 30px
-      width 30px
+      margin-right 5px
+      line-height 28px
+      width 28px
       text-align center
+    .sub
+      margin-top 20px
+      li
+        & > a
+          color $palette_color_0011
+          margin 5px 15px
+          opacity .86
+          border-radius 4px
+        &:hover
+          & > a
+            background alpha($palette_color_0011, 0.13)
+            opacity 1
+        &.active
+          & > a
+            color $palette_color_0011
+            opacity 1
+            background alpha($palette_color_0011, 0.23)
+      p
+        margin 0
+        line-height 30px
+        font-size 12px
+        font-weight 600
+        text-transform uppercase
+      i
+        font-size 19px
+        float left
+        margin-right 5px
+        line-height 65px
+        width 28px
+        text-align center
 
 .sidebar .logo,
 body > .navbar-collapse .logo
