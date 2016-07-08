@@ -87,7 +87,7 @@ p
   line-height 1.5
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small
-  color $palette_color_0008
+  color $color_0152
   font-weight 300
   line-height 1.5
 
@@ -100,22 +100,22 @@ h1
     margin 0 0 30px
 
 .text-muted
-  color $palette_color_0008
+  color $color_0152
 
 .text-primary, .text-primary:hover
-  color $palette_color_0007 !important
+  color $color_0151 !important
 
 .text-info, .text-info:hover
-  color $palette_color_0006 !important
+  color $color_0150 !important
 
 .text-success, .text-success:hover
-  color $palette_color_0005 !important
+  color $color_0003 !important
 
 .text-warning, .text-warning:hover
-  color $palette_color_0004 !important
+  color $color_0149 !important
 
 .text-danger, .text-danger:hover
-  color $palette_color_0013 !important
+  color $color_0155 !important
 
 body,
 .wrapper 
@@ -130,7 +130,7 @@ body,
   width $sidebar_size
   display block
   z-index 1
-  color $palette_color_0011
+  color $color_0145
   font-weight 200
   background-size cover
   background-position center center
@@ -158,7 +158,7 @@ body,
       float left
       font-size 20px
       margin 10px 10px
-      color $palette_color_0011
+      color $color_0145
       line-height 20px
       font-family "Helvetica Neue", Helvetica, Arial, sans-serif
     .simple-text
@@ -166,7 +166,7 @@ body,
       padding 5px 0px
       display block
       font-size 18px
-      color $palette_color_0011
+      color $color_0145
       text-align center
       font-weight 400
       line-height 30px
@@ -185,19 +185,19 @@ body,
     margin-top 20px
     li
       & > a
-        color $palette_color_0011
+        color $color_0145
         margin 5px 15px
         opacity .86
         border-radius 4px
       &:hover
         & > a
-          background alpha($palette_color_0011, 0.13)
+          background alpha($color_0145, 0.13)
           opacity 1
       &.active
         & > a
-          color $palette_color_0011
+          color $color_0145
           opacity 1
-          background alpha($palette_color_0011, 0.23)
+          background alpha($color_0145, 0.23)
     p
       margin 0
       line-height 30px
@@ -211,48 +211,18 @@ body,
       line-height 28px
       width 28px
       text-align center
-    .sub
-      margin-top 20px
-      li
-        & > a
-          color $palette_color_0011
-          margin 5px 15px
-          opacity .86
-          border-radius 4px
-        &:hover
-          & > a
-            background alpha($palette_color_0011, 0.13)
-            opacity 1
-        &.active
-          & > a
-            color $palette_color_0011
-            opacity 1
-            background alpha($palette_color_0011, 0.23)
-      p
-        margin 0
-        line-height 30px
-        font-size 12px
-        font-weight 600
-        text-transform uppercase
-      i
-        font-size 19px
-        float left
-        margin-right 5px
-        line-height 65px
-        width 28px
-        text-align center
 
 .sidebar .logo,
 body > .navbar-collapse .logo
   padding 10px 15px
-  border-bottom 1px solid alpha($palette_color_0011, 0.2)
+  border-bottom 1px solid alpha($color_0145, 0.2)
 
 .sidebar .logo p,
 body > .navbar-collapse .logo p
   float left
   font-size 20px
   margin 10px 10px
-  color $palette_color_0011
+  color $color_0145
   line-height 20px
   font-family "Helvetica Neue", Helvetica, Arial, sans-serif
 
@@ -262,7 +232,7 @@ body > .navbar-collapse .logo .simple-text
   padding 5px 0px
   display block
   font-size 18px
-  color $palette_color_0011
+  color $color_0145
   text-align center
   font-weight 400
   line-height 30px
@@ -297,17 +267,17 @@ body > .navbar-collapse:before
 .sidebar:before,
 body > .navbar-collapse:before
   opacity .33
-  background $palette_color_0000
+  background $color_0008
 
 .sidebar:after,
 body > .navbar-collapse:after
-  background $palette_color_0026
-  background -moz-linear-gradient(top, $palette_color_0026 0%, $palette_color_0027 100%)
-  background -webkit-gradient(linear, left top, left bottom, color-stop(0%, $palette_color_0026), color-stop(100%, $palette_color_0027))
-  background -webkit-linear-gradient(top, $palette_color_0026 0%, $palette_color_0027 100%)
-  background -o-linear-gradient(top, $palette_color_0026 0%, $palette_color_0027 100%)
-  background -ms-linear-gradient(top, $palette_color_0026 0%, $palette_color_0027 100%)
-  background linear-gradient(to bottom, $palette_color_0026 0%, $palette_color_0027 100%)
+  background $color_0168
+  background -moz-linear-gradient(top, $color_0168 0%, $color_0169 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color_0168), color-stop(100%, $color_0169))
+  background -webkit-linear-gradient(top, $color_0168 0%, $color_0169 100%)
+  background -o-linear-gradient(top, $color_0168 0%, $color_0169 100%)
+  background -ms-linear-gradient(top, $color_0168 0%, $color_0169 100%)
+  background linear-gradient(to bottom, $color_0168 0%, $color_0169 100%)
   background-size 150% 150%
   z-index 3
   opacity 1
@@ -317,13 +287,13 @@ body > .navbar-collapse[data-image]:after,
 body > .navbar-collapse.has-image:after
   opacity .77
 
-sidebar_color($palette_color_0014, $palette_color_0015, 'red')     // generated by @import 'mixins/sidebar_color'
-sidebar_color($palette_color_0016, $palette_color_0017, 'gray')    // generated by @import 'mixins/sidebar_color'
-sidebar_color($palette_color_0018, $palette_color_0019, 'blue')    // generated by @import 'mixins/sidebar_color'
-sidebar_color($palette_color_0006, $palette_color_0020, 'azure')   // generated by @import 'mixins/sidebar_color'
-sidebar_color($palette_color_0021, $palette_color_0022, 'green')   // generated by @import 'mixins/sidebar_color'
-sidebar_color($palette_color_0016, $palette_color_0023, 'orange')  // generated by @import 'mixins/sidebar_color'
-sidebar_color($palette_color_0024, $palette_color_0025, 'purple')  // generated by @import 'mixins/sidebar_color'
+sidebar_color($color_0156, $color_0157, 'red')     // generated by @import 'mixins/sidebar_color'
+sidebar_color($color_0158, $color_0159, 'gray')    // generated by @import 'mixins/sidebar_color'
+sidebar_color($color_0160, $color_0161, 'blue')    // generated by @import 'mixins/sidebar_color'
+sidebar_color($color_0150, $color_0162, 'azure')   // generated by @import 'mixins/sidebar_color'
+sidebar_color($color_0163, $color_0164, 'green')   // generated by @import 'mixins/sidebar_color'
+sidebar_color($color_0163, $color_0165, 'orange')  // generated by @import 'mixins/sidebar_color'
+sidebar_color($color_0166, $color_0167, 'purple')  // generated by @import 'mixins/sidebar_color'
 
 .main-panel
   background rgba(203, 203, 210, 0.15)
@@ -336,7 +306,7 @@ sidebar_color($palette_color_0024, $palette_color_0025, 'purple')  // generated 
     padding 30px 15px
     min-height: 'calc(100% - %s)' % ($sidebar_size - 107)
   & > .footer
-    border-top 1px solid $palette_color_0012
+    border-top 1px solid $color_0154
   .navbar
     margin-bottom 0
 
@@ -360,9 +330,8 @@ sidebar_color($palette_color_0024, $palette_color_0025, 'purple')  // generated 
   opacity 0.8
   //filter: alpha(opacity=80);
   padding 8px 16px
-  border-color $palette_color_0009
-  color $palette_color_0009
-
+  border-color $color_0153
+  color $color_0153
 
 .footer
   &:not(.footer-big)
@@ -371,7 +340,6 @@ sidebar_color($palette_color_0024, $palette_color_0025, 'purple')  // generated 
         li
           &:first-child
             margin-left 0
-
 
 .footer
   nav
